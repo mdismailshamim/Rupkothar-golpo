@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:background="@drawable/homepic">
+    <Button
+        android:id="@+id/id1"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\nরূপকথার গল্প"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@drawable/pdr_selector_main"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_below="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/pdr_selector_main"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:onClick="extra"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_share_24"/>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:onClick="extra"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_baseline_details_24"/>
+
+    </LinearLayout>
+</RelativeLayout>
